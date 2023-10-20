@@ -15,6 +15,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="1dp"
         android:text="search"
+        android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/searchView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +23,7 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="409dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -34,7 +35,7 @@
         android:searchIcon="@drawable/baseline_search_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" >
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
 
     </SearchView>
 
@@ -55,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Items List"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />

@@ -1,11 +1,14 @@
 package com.example.mainactivity.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mainactivity.CongratsBottomSheet
+import com.example.mainactivity.PayOutActivity
 import com.example.mainactivity.R
 import com.example.mainactivity.adapter.CartAdapater
 import com.example.mainactivity.databinding.FragmentCartBinding
@@ -42,6 +45,10 @@ class CartFragment : Fragment() {
     val adapter = CartAdapater(ArrayList(cartFoodName),ArrayList(CartItemPrice),ArrayList(cartImage))
         binding.cartRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.cartRecyclerView.adapter = adapter
+        binding.proceedButton.setOnClickListener {
+        val intent =  Intent(requireContext(),PayOutActivity::class.java)
+        startActivity(intent)
+        }
         return binding.root
 }
     companion object {
