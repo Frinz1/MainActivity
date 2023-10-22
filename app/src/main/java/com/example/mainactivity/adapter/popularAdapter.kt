@@ -1,11 +1,15 @@
 package com.example.mainactivity.adapter
 
+import android.content.Context
+import android.content.Intent
+import android.media.Image
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mainactivity.databinding.PopularItemBinding
+import com.example.mainactivity.detailsActivity
 
-class popularAdapter (private val items:List<String>,private val price:List<String>, private val image:List<Int>): RecyclerView.Adapter<popularAdapter.popularViewHolder>() {
+class popularAdapter (private val items:List<String>,private val price:List<String>, private val image:List<Int>, private val requireContext : Context): RecyclerView.Adapter<popularAdapter.popularViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): popularViewHolder {
@@ -17,6 +21,13 @@ val item = items[position]
         val images = image[position]
         val price = price [position]
         holder.bind(item,price,images)
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent ( requireContext, detailsActivity::class.java)
+            intent.putExtra("MenuItemName", item)
+            intent.putExtra("MenuItemImage", images)
+            requireContext.startActivity(intent)
+        }
 
     }
     override fun getItemCount(): Int {

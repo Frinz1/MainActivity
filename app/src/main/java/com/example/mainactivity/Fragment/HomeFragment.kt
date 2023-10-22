@@ -70,7 +70,7 @@ class HomeFragment : Fragment() {
         val Price = listOf("₱299","₱299","₱299","₱299","₱299")
         val popularItemImages =
             listOf(R.drawable.item1,R.drawable.item2,R.drawable.item3,R.drawable.item4,R.drawable.item5)
-val adapter = popularAdapter(itemName,Price,popularItemImages)
+val adapter = popularAdapter(itemName,Price,popularItemImages, requireContext())
         binding.PopularRecyclerView.layoutManager =LinearLayoutManager(requireContext())
         binding.PopularRecyclerView.adapter = adapter
     }
