@@ -64,4 +64,7 @@ dependencies {
     // Jetpack Compose Integration
     implementation("androidx.navigation:navigation-compose:$nav_version")
 
+    //lottie animation by ArthuroPogiYummers
+    implementation "com.airbnb.android:lottie:6.1.0"
+
 }
