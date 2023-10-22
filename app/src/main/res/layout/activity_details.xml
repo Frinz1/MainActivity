@@ -25,6 +25,7 @@
         android:fontFamily="sans-serif-medium"
         android:text="Detailed Item Name"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
@@ -57,6 +58,7 @@
         android:fontFamily="sans-serif-medium"
         android:text="Short Description"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
@@ -67,7 +69,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
-        android:fontFamily="serif"
+        android:fontFamily="casual"
+        android:text="These stylish shoes are perfect for both athletic and casual wear. Available in a trendy Grey Tan color, these versatile sneakers combine fashion and functionality."
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView10"
@@ -91,8 +95,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:fontFamily="serif"
-        android:text="test\ntest \ntest"
+        android:fontFamily="casual"
+        android:text="LEATHER"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView14"
@@ -114,5 +119,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MaterialTextview" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

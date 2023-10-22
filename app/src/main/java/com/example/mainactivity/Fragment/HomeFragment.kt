@@ -83,7 +83,7 @@ class HomeFragment : Fragment() {
             }
         })
         val itemName = listOf(
-            "New Balance XRCTU MSXRCTUD",
+            "New Balance X‑Racer Tactical Utility 'Grey Tan'",
             "Custom Jordan 1",
             "Nike SB dunk low cut",
             "Adidas Ultrabounce",
