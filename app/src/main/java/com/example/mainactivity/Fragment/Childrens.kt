@@ -7,11 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mainactivity.adapter.MenuAdapter
+import com.example.mainactivity.databinding.FragmentChildrensBinding
 import com.example.mainactivity.databinding.FragmentMenuBottomSheetBinding
+import com.example.mainactivity.databinding.FragmentWomenBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class MenuBottomSheetFragment :BottomSheetDialogFragment() {
-    private lateinit var binding:FragmentMenuBottomSheetBinding
+class Childrens :BottomSheetDialogFragment() {
+    private lateinit var binding:FragmentChildrensBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,25 +24,23 @@ class MenuBottomSheetFragment :BottomSheetDialogFragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMenuBottomSheetBinding.inflate(inflater,container,false)
+        binding = FragmentChildrensBinding.inflate(inflater,container,false)
 
         val menuFoodName = listOf(
-            "New Balance XRCTU MSXRCTUD",
-            "Custom Jordan 1",
-            "Nike SB dunk low cut",
-            "Adidas Ultrabounce",
-            "Under Armour Shirt",
-            "Under Armour Pants"
+            "Khaki Children's pants",
+            "Linen Baby Dress",
+            "Corduroy Overalls Set",
+            "Children's Wear Set",
+            "Summer Romper Button Sleeveless"
         )
-        val menuItemPrice = listOf("₱299", "₱299", "₱299", "₱299", "₱299","₱299")
+        val menuItemPrice = listOf("₱299", "₱299", "₱299", "₱299", "₱299")
         val menuImage =
             listOf(
-                R.drawable.men1,
-                R.drawable.men2,
-                R.drawable.men3,
-                R.drawable.men4,
-                R.drawable.men5,
-                R.drawable.men6
+                R.drawable.children1,
+                R.drawable.children2,
+                R.drawable.children3,
+                R.drawable.children4,
+                R.drawable.children5
             )
         val adapter = MenuAdapter(ArrayList(menuFoodName),ArrayList(menuItemPrice),ArrayList(menuImage))
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())

@@ -4,15 +4,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
+import com.example.mainactivity.Childrens
 import com.example.mainactivity.MenuBottomSheetFragment
 import com.example.mainactivity.R
+import com.example.mainactivity.Womens
 import com.example.mainactivity.adapter.popularAdapter
 import com.example.mainactivity.databinding.FragmentHomeBinding
 
@@ -36,6 +37,14 @@ class HomeFragment : Fragment() {
             val bottomSheetDialog = MenuBottomSheetFragment()
             bottomSheetDialog.show(parentFragmentManager,"Test")
         }
+        binding.textView9.setOnClickListener {
+            val bottomSheetDialog = Womens()
+            bottomSheetDialog.show(parentFragmentManager,"Test")
+        }
+        binding.textView10.setOnClickListener {
+            val bottomSheetDialog = Childrens()
+            bottomSheetDialog.show(parentFragmentManager,"Test")
+        }
         return binding.root
 
 
@@ -47,9 +56,16 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val imageList = ArrayList<SlideModel>()
-        imageList.add(SlideModel(R.drawable.sale, ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.sale, ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.sale, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slide1, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slide2, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slide3, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slide4, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slide5, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slide6, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slide7, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slide8, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slides9, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.slide10, ScaleTypes.FIT))
 
         val imageSlider = binding.imageSlider
         imageSlider.setImageList(imageList)
