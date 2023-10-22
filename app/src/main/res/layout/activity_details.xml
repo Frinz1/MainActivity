@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-medium"
         android:text="Short Description"
         android:textSize="20sp"
@@ -65,10 +65,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="serif"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -76,7 +77,7 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="sans-serif-medium"
         android:text="Material Used"
         android:textSize="20sp"
@@ -89,7 +90,7 @@
         android:id="@+id/MaterialTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="serif"
         android:text="test\ntest \ntest"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,10 +100,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/addtocartshape"
         android:fontFamily="sans-serif-medium"
@@ -110,6 +111,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MaterialTextview" />
 

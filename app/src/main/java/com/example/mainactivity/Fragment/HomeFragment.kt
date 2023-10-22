@@ -82,10 +82,56 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(),itemMessage,Toast.LENGTH_SHORT).show()
             }
         })
-        val itemName = listOf("Black Shoes","Happy Happy Shirt","Sad Happy Shirt","Leather Shoes","BBM Shoes")
-        val Price = listOf("₱299","₱299","₱299","₱299","₱299")
+        val itemName = listOf(
+            "New Balance XRCTU MSXRCTUD",
+            "Custom Jordan 1",
+            "Nike SB dunk low cut",
+            "Adidas Ultrabounce",
+            "Under Armour Shirt",
+            "Under Armour Pants",
+            "Gucci Bag",
+            "Gucci B&W Sandals",
+            "Gucci Coat",
+            "Leather Sandals",
+            "Gucci Women's Slides",
+            "Khaki Children's pants",
+            "Linen Baby Dress",
+            "Corduroy Overalls Set",
+            "Children's Wear Set",
+            "Summer Romper Button Sleeveless",
+            "Black Shoes",
+            "Happy Happy Shirt",
+            "Sad Happy Shirt",
+            "Leather Shoes",
+            "BBM Shoes")
+        val Price = listOf(
+            "₱299","₱299","₱299","₱299","₱299",
+            "₱299","₱299","₱299","₱299","₱299",
+            "₱299","₱299","₱299","₱299","₱299",
+            "₱299","₱299","₱299","₱299","₱299","₱299")
         val popularItemImages =
-            listOf(R.drawable.item1,R.drawable.item2,R.drawable.item3,R.drawable.item4,R.drawable.item5)
+            listOf(
+                R.drawable.men1,
+                R.drawable.men2,
+                R.drawable.men3,
+                R.drawable.men4,
+                R.drawable.men5,
+                R.drawable.men6,
+                R.drawable.women1,
+                R.drawable.women2,
+                R.drawable.women3,
+                R.drawable.women4,
+                R.drawable.women5,
+                R.drawable.children1,
+                R.drawable.children2,
+                R.drawable.children3,
+                R.drawable.children4,
+                R.drawable.children5,
+                R.drawable.item1,
+                R.drawable.item2,
+                R.drawable.item3,
+                R.drawable.item4,
+                R.drawable.item5)
 val adapter = popularAdapter(itemName,Price,popularItemImages, requireContext())
         binding.PopularRecyclerView.layoutManager =LinearLayoutManager(requireContext())
         binding.PopularRecyclerView.adapter = adapter

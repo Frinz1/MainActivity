@@ -20,16 +20,49 @@ class SearchFragment : Fragment() {
         "Happy Happy Shirt",
         "Sad Happy Shirt",
         "Leather Shoes",
-        "BBM Shoes"
+        "BBM Shoes",
+        "New Balance XRCTU MSXRCTUD",
+        "Custom Jordan 1",
+        "Nike SB dunk low cut",
+        "Adidas Ultrabounce",
+        "Under Armour Shirt",
+        "Under Armour Pants",
+        "Gucci Bag",
+        "Gucci B&W Sandals",
+        "Gucci Coat",
+        "Leather Sandals",
+        "Gucci Women's Slides",
+        "Khaki Children's pants",
+        "Linen Baby Dress",
+        "Corduroy Overalls Set",
+        "Children's Wear Set",
+        "Summer Romper Button Sleeveless"
     )
-    private val orginalMenuItemPrice = listOf("₱299", "₱299", "₱299", "₱299", "₱299")
+    private val orginalMenuItemPrice = listOf("₱299", "₱299", "₱299", "₱299", "₱299","₱299", "₱299", "₱299", "₱299", "₱299",
+        "₱299", "₱299", "₱299", "₱299", "₱299","₱299", "₱299", "₱299", "₱299", "₱299","₱299")
     private val originalmenuImage =
         listOf(
             R.drawable.item1,
             R.drawable.item2,
             R.drawable.item3,
             R.drawable.item4,
-            R.drawable.item5
+            R.drawable.item5,
+            R.drawable.men1,
+            R.drawable.men2,
+            R.drawable.men3,
+            R.drawable.men4,
+            R.drawable.men5,
+            R.drawable.men6,
+            R.drawable.women1,
+            R.drawable.women2,
+            R.drawable.women3,
+            R.drawable.women4,
+            R.drawable.women5,
+            R.drawable.children1,
+            R.drawable.children2,
+            R.drawable.children3,
+            R.drawable.children4,
+            R.drawable.children5
         )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

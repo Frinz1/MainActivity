@@ -29,9 +29,18 @@ class HistoryFragment : Fragment() {
         return binding.root
     }
 private fun setupRecyclerView(){
-    val buyAgainFoodName = arrayListOf("Food 2","Food 2","Food 3")
-    val buyAgainFoodPrice = arrayListOf("P299","P299","P299")
-    val buyAgainFoodImage = arrayListOf(R.drawable.item1,R.drawable.item5,R.drawable.item4)
+    val buyAgainFoodName = arrayListOf(
+        "Leather Shoes",
+        "BBM Shoes",
+        "Masiken Shoes")
+    val buyAgainFoodPrice = arrayListOf(
+        "P299",
+        "P299",
+        "P299")
+    val buyAgainFoodImage = arrayListOf(
+        R.drawable.item1,
+        R.drawable.item5,
+        R.drawable.item4)
     buyAgainAdapter = BuyAgainAdapter(buyAgainFoodName,buyAgainFoodPrice,buyAgainFoodImage)
     binding.BuyAgainRecyclerView.adapter = buyAgainAdapter
     binding.BuyAgainRecyclerView.layoutManager= LinearLayoutManager(requireContext())
