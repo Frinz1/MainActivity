@@ -36,11 +36,15 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/goHome"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="390dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="150dp"
         android:background="@drawable/button"
+        android:gravity="center"
         android:text="Order Again" />
 
 </FrameLayout>

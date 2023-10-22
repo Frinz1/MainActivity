@@ -42,7 +42,7 @@
                 android:ems="10"
                 android:fontFamily="sans-serif-medium"
                 android:inputType="text"
-                android:text="Admin Name" />
+                android:hint=" Insert your Name " />
         </LinearLayout>
 
         <LinearLayout
@@ -76,7 +76,7 @@
                 android:ems="10"
                 android:fontFamily="sans-serif-medium"
                 android:inputType="textMultiLine"
-                android:text="Input Address" />
+                android:hint=" Insert your address"/>
         </LinearLayout>
 
         <LinearLayout
@@ -108,7 +108,7 @@
                 android:ems="10"
                 android:fontFamily="sans-serif-medium"
                 android:inputType="textEmailAddress"
-                android:text="Input Name" />
+                android:hint=" Insert your Email Address"/>
         </LinearLayout>
 
         <LinearLayout
@@ -141,7 +141,7 @@
                 android:ems="10"
                 android:fontFamily="sans-serif-medium"
                 android:inputType="phone"
-                android:text="Input Number" />
+                android:hint=" Insert your Phone Number"/>
         </LinearLayout>
 
 

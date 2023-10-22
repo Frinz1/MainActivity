@@ -15,5 +15,8 @@ class PayOutActivity : AppCompatActivity() {
             val bottomSheetDialog = CongratsBottomSheet()
             bottomSheetDialog.show(supportFragmentManager,"Test")
         }
+        binding.proceedbackbutton.setOnClickListener {
+            finish()
+        }
     }
 }

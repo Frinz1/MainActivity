@@ -14,13 +14,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
         <ImageButton
-            android:id="@+id/button4"
+            android:id="@+id/proceedbackbutton"
             android:layout_width="32dp"
             android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/baseline_arrow_back_24"
             android:scaleType="centerCrop"
+            android:src="@drawable/baseline_arrow_back_24"
             android:text="Button" />
 
     <TextView
@@ -51,12 +54,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <TextView
-            android:layout_width="30dp"
-            android:textColor="@color/black"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:paddingLeft="8dp"
-            android:text="Name" />
+            android:text="Name"
+            android:textColor="@color/black" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -64,9 +68,10 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:ems="10"
+            android:fontFamily="serif"
+            android:hint=" Enter your Name"
             android:inputType="text"
-            android:textColor="@color/black"
-            android:text="Name" />
+            android:textColor="@color/black" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -83,24 +88,26 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <TextView
-            android:layout_width="30dp"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:paddingLeft="8dp"
-            android:textColor="@color/black"
-            android:text="Address" />
+            android:text="Address"
+            android:textColor="@color/black" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:ems="10"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint=" Enter your Email Address"
             android:inputType="textMultiLine"
-            android:text="HAUSIDKHJSHKHSJKHDJKSAHKJHDKAHDKADJAKKHADKSHAKHSJKSKDSAKHS" />
+            android:textColor="@color/black" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -115,12 +122,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <TextView
-            android:layout_width="30dp"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:paddingLeft="8dp"
-            android:textColor="@color/black"
-            android:text="Phone" />
+            android:text="Phone"
+            android:textColor="@color/black" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -128,40 +136,10 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:ems="10"
-            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:hint=" Enter Your Name"
             android:inputType="text"
-            android:text="09332322389" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/whitebackground"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8">
-
-        <TextView
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingLeft="8dp"
-            android:textColor="@color/black"
-            android:text="Payment" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:ems="10"
-            android:textColor="@color/black"
-            android:inputType="text"
-            android:text="Name" />
+            android:textColor="@color/black" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -177,25 +155,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <TextView
-            android:layout_width="30dp"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
             android:paddingLeft="8dp"
-            android:textColor="@color/black"
-            android:text="TextView" />
+            android:text="Payment Method"
+            android:textColor="@color/black" />
 
-        <EditText
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:ems="10"
-            android:textColor="@color/black"
-            android:inputType="text"
-            android:text="Name" />
+            app:srcCompat="@drawable/cashondelivery" />
+
     </LinearLayout>
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginTop="16dp"
@@ -209,25 +186,26 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="106dp">
 
-        <TextView
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingLeft="8dp"
-            android:textColor="@color/black"
-            android:text="Total Amount" />
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="8dp"
+                android:text="Total Amount"
+                android:textColor="@color/black" />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:ems="10"
-
-            android:gravity="end"
-            android:textColor="@color/black"
-            android:inputType="text"
-            android:text="299" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:gravity="end"
+                android:inputType="none"
+                android:text="299"
+                android:textColor="@color/black" />
     </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton

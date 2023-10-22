@@ -23,12 +23,12 @@
         android:layout_height="wrap_content"
         android:text="Explore Your Favorite Items"
         android:textColor="@color/black"
-        android:textSize="21dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textStyle="bold"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
